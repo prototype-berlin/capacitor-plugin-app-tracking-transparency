@@ -2,9 +2,18 @@ import Foundation
 import Capacitor
 import AppTrackingTransparency
 
+/**
+ * Please read the Capacitor iOS Plugin Development Guide
+ * here: https://capacitorjs.com/docs/plugins/ios
+ */
 @objc(AppTrackingTransparencyPlugin)
-public class AppTrackingTransparencyPlugin: CAPPlugin {
-    private let implementation = AppTrackingTransparency()
+public class AppTrackingTransparencyPlugin: CAPPlugin, CAPBridgedPlugin {
+    public let identifier = "AppTrackingTransparencyPlugin"
+    public let jsName = "AppTrackingTransparency"
+    public let pluginMethods: [CAPPluginMethod] = [
+        CAPPluginMethod(name: "getStatus", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "requestPermission", returnType: CAPPluginReturnPromise),
+    ]
 
     @objc func getStatus(_ call: CAPPluginCall) {
         if #available(iOS 14.0, *) {
