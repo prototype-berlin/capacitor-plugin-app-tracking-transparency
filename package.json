@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://git.prototype.berlin/prototype-berlin/capacitor-plugin-app-tracking-transparency.git"
+    "url": "git+https://github.com/prototype-berlin/capacitor-plugin-app-tracking-transparency.git"
   },
   "bugs": {
-    "url": "https://git.prototype.berlin/prototype-berlin/capacitor-plugin-app-tracking-transparency.git/issues"
+    "url": "https://github.com/prototype-berlin/capacitor-plugin-app-tracking-transparency/issues"
   },
   "keywords": [
     "capacitor",
