@@ -1,6 +1,6 @@
 {
   "name": "capacitor-plugin-app-tracking-transparency",
-  "version": "8.0.0",
+  "version": "8.0.1",
   "description": "Capacitor plugin to request user authorization to access app-related data for tracking the user or the device.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -29,7 +29,7 @@
   ],
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:web",
-    "verify:ios": "xcodebuild build -scheme CapacitorPluginAppTrackingTransparency -sdk iphonesimulator17.2 -destination 'OS=17.2,name=iPhone 15'",
+    "verify:ios": "xcodebuild -scheme CapacitorPluginAppTrackingTransparency -destination generic/platform=iOS",
     "verify:web": "npm run build",
     "lint": "npm run eslint && npm run prettier -- --check && npm run swiftlint -- lint",
     "fmt": "npm run eslint -- --fix && npm run prettier -- --write && npm run swiftlint -- autocorrect --format",

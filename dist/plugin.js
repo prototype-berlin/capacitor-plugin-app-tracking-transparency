@@ -21,8 +21,6 @@ var capacitorAppTrackingTransparency = (function (exports, core) {
 
     exports.AppTrackingTransparency = AppTrackingTransparency;
 
-    Object.defineProperty(exports, '__esModule', { value: true });
-
     return exports;
 
 })({}, capacitorExports);
